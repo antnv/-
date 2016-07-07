@@ -50,6 +50,23 @@ def change_color(col):
     t.color(col)
     t.width(4)
 
+def setka():
+ pen_up()
+ for y in range(-5,6,1):
+    to_point(-8, y)
+    pen_down()
+    to_point(8, y)
+    pen_up()
+ for x in range(-6,7,1):
+    to_point(x, -8)
+    pen_down()
+    to_point(x, 8)
+    pen_up()
+ change_color('red')
+
+
+
+
 init_drawman()
 if __name__ == '__main__':
     import time
