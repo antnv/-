@@ -46,6 +46,9 @@ def to_point(x, y):
     y_current = y
     t.goto(_drawman_scale*x_current, _drawman_scale*y_current)
 
+def change_color(col):
+    t.color(col)
+    t.width(4)
 
 init_drawman()
 if __name__ == '__main__':
